@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\GetCollection;
 use App\Repository\PostRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PostRepository::class)]
+#[GetCollection]
 class Post
 {
     #[ORM\Id]
