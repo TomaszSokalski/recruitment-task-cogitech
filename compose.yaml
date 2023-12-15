@@ -12,7 +12,7 @@ services:
       - '3306:3306'
 
   adminer:
-    container_name: recruitment-task-solution_adminer1
+    container_name: recruitment-task-solution
     image: adminer
     restart: always
     ports:
